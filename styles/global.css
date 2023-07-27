@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+  /* button, [type='button'], [type='reset'], [type='submit'] {
+    background-color: unset;
+  } */
+  /* ... */
+  /* ol, ul, menu { */
+    /* list-style: un; */
+    /* margin: 0;
+    padding: 0; */
+  /* } */
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-xl bg-primary text-white flex items-center justify-center h-11 font-bold hover:!text-white;
+  }
+
+  .btn-secondary {
+    @apply rounded-xl bg-white text-primary flex items-center justify-center h-11 font-bold;
+  }
+
+  .btn-primary[disabled] {
+    @apply opacity-50 bg-primary;
+  }
+
+  .error-text {
+    @apply text-red-400;
+    margin-top: 2px;
+    font-size: 12px;
+  }
+
+  .layout {
+    @apply w-full max-w-[1440px] md:px-8 px-5;
+  }
+}

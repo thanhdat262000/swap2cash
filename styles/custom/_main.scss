@@ -1,0 +1,126 @@
+@import './button';
+
+.ant-select {
+  width: 100%;
+  &-selector {
+    border-radius: 8px !important;
+    height: 3rem !important;
+  }
+  &-selection-item {
+    display: flex;
+    align-items: center;
+  }
+  &-selection-placeholder {
+    display: flex;
+    align-items: center;
+  }
+}
+.ant-statistic-content {
+  @apply text-sm text-stone-400 font-["Poppins"];
+}
+
+.ant-segmented {
+  @apply p-1;
+  .ant-segmented-group {
+    @apply h-full;
+    .ant-segmented-item {
+      @apply flex items-center w-16;
+    }
+  }
+}
+
+.custom-table {
+  font-family: 'Poppins', sans-serif;
+  @apply w-full;
+  .ant-table-content {
+  }
+}
+
+.ant-input-prefix {
+  width: fit-content;
+  display: block;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.green {
+  color: $color_green;
+}
+
+.btn-action.ant-btn {
+  padding-left: 0;
+  color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.p2p-page {
+  border-radius: 16px;
+  background: #fff;
+  max-width: 1200px;
+  width: 100%;
+  padding: 64px;
+  margin: 32px auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ant-tabs .ant-tabs-tab .ant-tabs-tab-btn {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.blog-detail {
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+  }
+
+  &__content {
+    font-size: 14px;
+  }
+}
+
+li {
+  display: list-item !important;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+ul ul,
+ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+ol ol,
+ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .p2p-page {
+    padding: 24px;
+  }
+}
+
+.order-detail__title__countdown {
+  .ant-statistic,
+  .ant-statistic-content-value {
+    font-size: 24px;
+  }
+}

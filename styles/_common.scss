@@ -1,0 +1,292 @@
+html,
+body {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+
+  #root {
+    height: 100%;
+
+    .App {
+      height: 100%;
+    }
+  }
+}
+
+.ant-select-show-search {
+  .ant-select-selector .ant-select-selection-search-input {
+    height: 100% !important;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdown-default {
+  .ant-dropdown-menu {
+    padding: 10px;
+  }
+
+  .ant-dropdown-menu-item {
+    padding: 8px 15px !important;
+  }
+}
+
+.header {
+  background-color: var(--color-bg-header);
+}
+
+.footer {
+  background-color: var(--color-bg-footer);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px 30px 10px 40px;
+  font-size: 14px;
+  margin-top: auto;
+  &__left {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .anticon {
+      font-size: 26px;
+      margin: 15px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__right {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__contact {
+    margin-right: 80px;
+  }
+
+  &__item {
+    margin-top: 10px;
+
+    &__link {
+      // font-weight: 500;
+    }
+  }
+
+  &__content {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.anticon.anticon-copy {
+  color: var(--color-primary);
+}
+
+.modal-confirm {
+}
+
+.price-ticker {
+  height: 100px;
+  margin-bottom: -120px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    // flex-direction: column;
+    // align-items: start;
+    // gap: 1rem;
+    &__content {
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+    }
+  }
+
+  .footer__left {
+    font-size: 20px;
+  }
+
+  .footer__right {
+    flex-direction: column;
+
+    .footer__contact {
+      margin-bottom: 20px;
+    }
+  }
+
+  .btn-create-sellorder {
+    margin-top: 20px;
+  }
+  .price-ticker {
+    margin-bottom: -100px;
+  }
+}
+
+.warning-tx {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.modal-upload-evidence {
+}
+
+.button-camera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.upload-image {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.a-not-show {
+  &:hover {
+    color: unset;
+  }
+}
+
+.ant-btn-default:disabled {
+  &:hover {
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.25) !important;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-banner {
+  margin-bottom: 50px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: var(--color-primary);
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: var(--color-primary);
+}
+
+.profile {
+  &__referral {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+
+    &__title {
+      font-weight: 500;
+      margin-right: 5px;
+    }
+  }
+}
+
+.register {
+  &__flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  &__resend-text {
+    margin-top: -5px;
+  }
+}
+
+.ant-btn-primary {
+  box-shadow: none;
+}
+
+.page-normal {
+  &__content {
+    font-size: 16px;
+    letter-spacing: 0.1px;
+
+    ul {
+      li {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.dropdown-header-menu {
+  margin-right: 25px;
+}
+
+.all-blog {
+  .blog-item {
+    border-radius: 12px;
+    height: 150px;
+    width: 260px;
+    max-width: 260px;
+    padding: 1rem 1rem 1.5rem;
+  }
+}
+
+.swap-widget {
+  width: 528px !important;
+  height: 492px;
+}

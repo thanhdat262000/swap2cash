@@ -1,0 +1,70 @@
+.order-detail {
+  border-radius: 16px;
+  background: #fff;
+  width: 1200px;
+  padding: 64px;
+  margin: 32px auto;
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.order-status {
+  background: $color_grey;
+  padding: 16px;
+  border-radius: $box_border;
+}
+.ant-steps .ant-steps-item-process .ant-steps-item-icon {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.order-info {
+  padding: 16px;
+  background: $color_grey;
+  border-radius: $box_border;
+  &__item-val {
+    font-size: 18px;
+  }
+}
+
+.order-payment-warning {
+  background: $color_secondary;
+  padding: 16px;
+  border-radius: $box_border_sm;
+  border: 1px solid var(--color-primary);
+  white-space: pre-line;
+}
+
+.payment-bank {
+  width: 500px;
+  margin-top: 16px;
+}
+
+.order-payment-actions {
+  display: flex;
+  gap: 16px;
+
+  // .ant-btn {
+  //   min-width: 150px;
+  //   border-color: var(--color-primary);
+  //   background: var(--color-primary);
+  //   padding: 12px 24px;
+  //   height: 48px;
+  //   font-size: 16px;
+  //   font-weight: 600;
+  //   &:hover {
+  //     color: black;
+  //     border-color: var(--color-primary);
+  //   }
+  // }
+  .ant-btn.btn-cancel {
+    background: transparent;
+    border-color: #d9d9d9;
+    &:hover {
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+  }
+}
