@@ -70,10 +70,11 @@ export const PolygonMainnetChainIdDec = 137;
 export const PolygonTestnetChainId = '0x13881';
 export const PolygonTestnetChainIdDec = 80001;
 
+export const CVCChainId = 55555;
+
 export const DEFAULT_CHAIN_TESTNET = PolygonTestnetChainIdDec;
 export const DEFAULT_CHAIN_MAINET = PolygonMainnetChainIdDec;
-export const DEFAULT_CHAIN =
-  process.env.NEXT_PUBLIC_IS_DEV === 'true' ? PolygonTestnetChainIdDec : PolygonMainnetChainIdDec;
+export const DEFAULT_CHAIN = process.env.NEXT_PUBLIC_IS_DEV === 'true' ? CVCChainId : CVCChainId;
 
 export const CHAIN_INFO = {
   BSC: {
@@ -141,6 +142,17 @@ export const CHAIN_INFO = {
     suffixToken: 'ERC-20',
     explorerName: 'Polygonscan',
     suffixKey: '_POL',
+  },
+  CVC_TESTNET: {
+    name: 'CVC  Testnet',
+    value: CVCChainId,
+    valueString: CVCChainId.toString(),
+    icon: null,
+    textWarning: 'Cross Chain Value - Testnet',
+    url: 'https://testnet.cvcscan.com',
+    suffixToken: 'ERC-20',
+    explorerName: 'CVC',
+    suffixKey: '',
   },
 };
 
@@ -229,6 +241,19 @@ export const APP_NETWORKS_SUPPORT = {
       },
       rpcUrls: [LIST_NETWORK_RPC_TESTNET[POLYGON_CHAIN_ID_TESTNET]],
       blockExplorerUrls: [CHAIN_INFO.POLYGON_TESTNET.url],
+    },
+  },
+  [CVCChainId]: {
+    details: {
+      chainId: `0x${(+CVCChainId).toString(16)}`,
+      chainName: CHAIN_INFO.CVC_TESTNET.name,
+      nativeCurrency: {
+        name: 'XCR',
+        symbol: 'XCR',
+        decimals: 18,
+      },
+      rpcUrls: ['https://rpc-kura.cross.technology'],
+      blockExplorerUrls: [CHAIN_INFO.CVC_TESTNET.url],
     },
   },
 };
